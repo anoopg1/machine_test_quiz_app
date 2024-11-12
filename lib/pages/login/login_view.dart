@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:machine_test_quiz_app/core/ui_helpers/responsive.dart';
+import 'package:machine_test_quiz_app/core/ui_helpers.dart';
 import 'package:machine_test_quiz_app/pages/login/login_viewmodel.dart';
 import 'package:machine_test_quiz_app/widgets/custom_textfield.dart';
 
@@ -23,8 +23,8 @@ class LoginView extends StatelessWidget {
                   height: screenHeight(context) * 0.30,
                   width: screenWidth(context),
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    // crossAxisAlignment: CrossAxisAlignment.center,
+                    // mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       CustomTextfield(
                         hinttext: "Mobile Number",
@@ -37,8 +37,11 @@ class LoginView extends StatelessWidget {
                         suffixicon: const Icon(Icons.remove_red_eye),
                       ),
                       verticalSpaceLarge,
-                      ElevatedButton(
-                          onPressed: () {}, child: const Text("Login")),
+                      TextButton(
+                          onPressed: () {
+                            viewModel.navigateToHomeScreen();
+                          },
+                          child: const Text("Login")),
                     ],
                   ),
                 ),
@@ -51,7 +54,11 @@ class LoginView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text("Don't have an account?"),
-                    TextButton(onPressed: () {}, child: Text("Sign up"))
+                    TextButton(
+                        onPressed: () {
+                          viewModel.navigateToSignupScreen();
+                        },
+                        child: const Text("Sign up"))
                   ],
                 ),
               )

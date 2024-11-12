@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:machine_test_quiz_app/app/app.router.dart';
-import 'package:machine_test_quiz_app/core/theme/themes.dart';
+import 'package:machine_test_quiz_app/core/themes.dart';
 
 import 'package:stacked_services/stacked_services.dart';
 
