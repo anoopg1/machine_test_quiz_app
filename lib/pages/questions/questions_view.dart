@@ -18,6 +18,7 @@ class QuestionsView extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: [
+              verticalSpaceLarge,
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -40,7 +41,7 @@ class QuestionsView extends StatelessWidget {
                     child: Row(
                       children: [
                         LinearPercentIndicator(
-                          width: screenWidth(context) * 0.70,
+                          width: screenWidth(context) * 0.65,
                           lineHeight: 14.0,
                           percent: 0.5,
                         ),

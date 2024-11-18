@@ -22,30 +22,17 @@ class HomeView extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Hello John",
-                        style: TextStyle(
-                            color: kwhite,
-                            fontStyle: FontStyle.italic,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 28),
-                      ),
-                      Text(
-                        "Lets make the day productive",
-                        style: TextStyle(color: kwhite, fontSize: 12),
-                      )
-                    ],
+                    children: [],
                   ),
                 ),
-                actions: const [
-                  Padding(
-                    padding: EdgeInsets.only(right: 20),
-                    child: CircleAvatar(
-                      backgroundColor: Colors.orange,
-                    ),
-                  )
-                ],
+                // actions: const [
+                //   Padding(
+                //     padding: EdgeInsets.only(right: 20),
+                //     child: CircleAvatar(
+                //       backgroundColor: Colors.orange,
+                //     ),
+                //   )
+                // ],
               ),
               body: Padding(
                 padding: const EdgeInsets.all(15.0),
@@ -53,6 +40,18 @@ class HomeView extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
+                    Text(
+                      "Hello John",
+                      style: TextStyle(
+                          color: kwhite,
+                          fontStyle: FontStyle.italic,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 28),
+                    ),
+                    Text(
+                      "Lets make the day productive",
+                      style: TextStyle(color: kwhite, fontSize: 12),
+                    ),
                     const UserGuideWidget(
                       text: "Multiple choice questions",
                       title: '50',

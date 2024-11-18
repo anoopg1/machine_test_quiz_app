@@ -23,8 +23,6 @@ class SignupView extends StatelessWidget {
                   height: screenHeight(context) * 0.55,
                   width: screenWidth(context),
                   child: Column(
-                    // crossAxisAlignment: CrossAxisAlignment.center,
-                    // mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       CustomTextfield(
                         hinttext: "Name",
@@ -59,8 +57,8 @@ class SignupView extends StatelessWidget {
                 ),
               ),
               Positioned(
-                right: screenWidth(context) * 0.15,
-                left: screenWidth(context) * 0.15,
+                right: screenWidth(context) * 0.12,
+                left: screenWidth(context) * 0.12,
                 bottom: 0,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,

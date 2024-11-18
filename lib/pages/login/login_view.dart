@@ -20,7 +20,7 @@ class LoginView extends StatelessWidget {
               Positioned(
                 top: screenHeight(context) * 0.35,
                 child: SizedBox(
-                  height: screenHeight(context) * 0.30,
+                  height: screenHeight(context) * 0.40,
                   width: screenWidth(context),
                   child: Column(
                     // crossAxisAlignment: CrossAxisAlignment.center,
@@ -37,18 +37,18 @@ class LoginView extends StatelessWidget {
                         suffixicon: const Icon(Icons.remove_red_eye),
                       ),
                       verticalSpaceLarge,
-                      TextButton(
+                      ElevatedButton(
                           onPressed: () {
                             viewModel.navigateToHomeScreen();
                           },
-                          child: const Text("Login")),
+                          child: const Text("Login"))
                     ],
                   ),
                 ),
               ),
               Positioned(
-                right: screenWidth(context) * 0.15,
-                left: screenWidth(context) * 0.15,
+                right: screenWidth(context) * 0.12,
+                left: screenWidth(context) * 0.12,
                 bottom: 0,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
